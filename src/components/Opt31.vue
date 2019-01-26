@@ -285,7 +285,7 @@ export default {
       };
       this.jsp.empty("workplace");
       if (id) {
-        let url = "/static/json/" + id;
+        let url = "./static/json/" + id;
         this.$axios.get(url).then(res => {
           this.chartData = res.data;
           this.$nextTick(() => {

@@ -463,7 +463,7 @@ export default {
           }
         });
         // let url = "./static/json/" + key + ".json";
-        let url = "/static/json/" + key + ".json";
+        let url = "./static/json/" + key + ".json";
 
         this.$axios
           .get(url)
