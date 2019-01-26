@@ -6,7 +6,8 @@
         text-color="#fff"
         active-text-color="#ffd04b"
         :router="true"
-        :default-active="$route.path">
+        :default-active="$route.path"
+        :unique-opened="true">
         <el-submenu index="1">
             <template slot="title">
                 <i class="el-icon-location"></i>
@@ -24,20 +25,31 @@
                 <el-menu-item index="/opt19">GROUPS</el-menu-item>
             </el-menu-item-group>
         </el-submenu>
-        <el-menu-item index="2">
-            <i class="el-icon-menu"></i>
-            <span slot="title">导航二</span>
-        </el-menu-item>
-        <el-menu-item index="3">
-            <i class="el-icon-document"></i>
-            <span slot="title">导航三</span>
-        </el-menu-item>
+        <el-submenu index="2">
+            <template slot="title">
+                <i class="el-icon-menu"></i>
+                <span>导航二</span>
+            </template>
+            <el-menu-item-group>
+                <el-menu-item index="/opt21">DRAG TO WORKPLACE</el-menu-item>
+                <el-menu-item index="/opt22">DEMO-CHART</el-menu-item>
+            </el-menu-item-group>
+        </el-submenu>
+        <el-submenu index="3">
+            <template slot="title">
+                <i class="el-icon-document"></i>
+                <span>导航三</span>
+            </template>
+            <el-menu-item-group>
+                <el-menu-item index="/opt31">3-1</el-menu-item>
+            </el-menu-item-group>
+        </el-submenu>
     </el-menu>
 </template>
 <script>
 export default {}
 </script>
-<style lang="stylus">
+<style lang="scss" scoped>
 .el-menu-vertical {
     width: 240px;
     min-height: 400px;

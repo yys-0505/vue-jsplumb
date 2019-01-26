@@ -11,8 +11,10 @@
     </div>
 </template>
 <script>
+// import { Biltong, Katavorio, Mottle, jsBezier, jsPlumb, jsPlumbUtil } from 'jsplumb';
 export default {
     mounted () {
+        console.log(jsPlumb);
         jsPlumb.ready(function () {
 
             var instance = window.jsp = jsPlumb.getInstance({

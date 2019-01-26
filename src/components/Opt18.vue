@@ -11,7 +11,6 @@
     </div>
 </template>
 <script>
-import littledot from "../assets/images/littledot.png";
 export default {
     mounted () {
         jsPlumb.ready(function () {
@@ -98,7 +97,7 @@ export default {
             // get a jsPlumb instance, setting some appropriate defaults and a Container.
             instance = jsPlumb.getInstance({
                 DragOptions: { cursor: 'wait', zIndex: 20 },
-                Endpoint: [ "Image", { url: littledot } ],
+                Endpoint: [ "Image", { url: require("../assets/images/littledot.png") } ],
                 Connector: [ "Bezier", { curviness: 90 } ],
                 Container: "canvas"
             });

@@ -10,6 +10,9 @@ import Opt16 from 'components/Opt16'
 import Opt17 from 'components/Opt17'
 import Opt18 from 'components/Opt18'
 import Opt19 from 'components/Opt19'
+import Opt21 from 'components/Opt21'
+import Opt22 from 'components/Opt22'
+import Opt31 from 'components/Opt31'
 
 Vue.use(Router)
 
@@ -28,7 +31,10 @@ const router = new Router({
                 {path: '/opt16', component: Opt16},
                 {path: '/opt17', component: Opt17},
                 {path: '/opt18', component: Opt18},
-                {path: '/opt19', component: Opt19}
+                {path: '/opt19', component: Opt19},
+                {path: '/opt21', component: Opt21},
+                {path: '/opt22', component: Opt22},
+                {path: '/opt31', component: Opt31}
             ]
         },
         {path: '*', redirect: '/'}

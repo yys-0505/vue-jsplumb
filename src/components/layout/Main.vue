@@ -10,10 +10,10 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
 .el-main {
     background-color: #E9EEF3;
     color: #333;
-    text-align: center;
+    padding: 20px;
 }
 </style>
